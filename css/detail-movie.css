@@ -1,0 +1,265 @@
+.choose-container .select {
+    float: left;
+  }
+  input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.select .sbHolder {
+    background-color: transparent;
+    border: none;
+    height: 35px;
+    width: 85px;
+  }
+  .select .sbToggle {
+    right: auto;
+    left: -32px;
+    top: 6px;
+  }
+  .select .sbToggle:before {
+    content: "\f14e";
+    font: 16px "FontAwesome";
+    color: #4c4145;
+    position: absolute;
+    top: 1px;
+    left: -17px;
+  }
+  .select .sbToggle:after {
+    content: 'City';
+    font: 13px 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  .select .sbSelector {
+    color: #fe505a;
+    position: relative;
+    text-align: right;
+    padding-right: 20px;
+    width: auto;
+    float: right;
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .select .sbSelector:before {
+    content: "\f078";
+    color: #fe505a;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    z-index: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .select .sbSelector:after {
+  content: '';
+  background-image: url('../images/components/wave-danger.svg');
+  -webkit-background-size: 40px 4px;
+  background-size: 40px 4px;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+.select .sbOptions {
+    margin-top: 11px;
+    margin-left: -120px;
+    border: none;
+    background-color: #4c4145;
+    width: 210px;
+    padding: 19px 24px 21px;
+    display: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    z-index: 34;
+    overflow: visible;
+  }
+  .sbOptions li{
+	padding: 0 7px;
+}.select .sbOptions a {
+    border: none;
+    color: #B4B1B2;
+    display: inline-block;
+    padding: 5px 0px 5px 25px;
+    position: relative;
+  }
+  .choose-container .datepicker {
+    margin-top: 4px;
+    margin-left: 50px;
+  }
+  .datepicker:before {
+    content: "\f078";
+    color: #fe505a;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    position: absolute;
+    top: 3px;
+    right: -2px;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .datepicker .datepicker__marker {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  .datepicker .datepicker__marker .fa {
+    padding-right: 5px;
+  }
+  .fa-calendar:before {
+    content: "\f073";
+  }
+  .datepicker .datepicker__input {
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    color: #fe505a;
+    background-color: transparent;
+    position: relative;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .datepicker:after {
+    content: '';
+    background-image: url('../images/components/wave-danger.svg');
+    -webkit-background-size: 40px 4px;
+    background-size: 40px 4px;
+    background-repeat: repeat-x;
+    width: 88px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+  }
+  .watchlist,
+.read-more {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.watchlist--map:before {
+    content: '\f041';
+  }
+  .watchlist:before {
+    content: '\f055';
+    color: #4c4145;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    position: absolute;
+    top: 4px;
+    left: 11px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .show-time {
+    display: none;
+  }
+  .clearfix,
+.container,
+.container-fluid,
+.row,
+.panel-body,
+.nav {
+  clear: both;
+}
+.time-select {
+    margin-top: 8px;
+  }
+  .time-select .time-select__group {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+    background-color: #f5f5f5;
+  }
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+  .time-select .time-select__place {
+    font-size: 16px;
+    margin-top: 21px;
+    margin-left: 5px;
+    margin-bottom: 23px;
+  }
+  .time-select .items-wrap {
+    padding-top: 15px;
+    margin-bottom: 5px;
+  }
+  .time-select .time-select__item {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    font-size: 12px;
+    background-color: #ffd564;
+    padding: 9px 15px 8px 14px;
+    margin: 5px 16px 5px 0;
+    cursor: pointer;
+  }
+  .time-select .time-select__item:before {
+    content: '';
+    width: 54px;
+    height: 28px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+  .time-select .time-select__item:after {
+    content: '';
+    width: 64px;
+    height: 34px;
+    background-image: url(../images/components/bg-time.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 64px 34px;
+    background-size: 64px 34px;
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    z-index: -1;
+  }
+  .time-select .time-select__group:after {
+    content: '';
+    width: 2px;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    left: 31%;
+    bottom: 0;
+  }
+  
+  .time-select .time-select__group:before {
+    content: '';
+    width: 2px;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    left: 31%;
+    top: 0;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
