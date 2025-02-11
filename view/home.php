@@ -71,7 +71,7 @@
                                 <div class="movie-content">
                                     <div class="top">
                                         <h5 class="title"><a href="index.php?act=movie_details"><?php echo $row['ten_phim']; ?></a></h5>
-                                        <span class="date">2023</span>
+                                        <span class="date"><?php echo $row['ngay_phat_hanh']; ?></span>
                                     </div>
                                     <div class="bottom">
                                         <ul>

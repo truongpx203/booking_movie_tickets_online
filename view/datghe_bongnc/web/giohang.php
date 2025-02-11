@@ -635,7 +635,7 @@ body {
     }
 
     .muccon:last-child p {
-        margin-left: 76%;
+        /* margin-left: 76%; */
     }
 
     .muccon p {
@@ -710,6 +710,11 @@ body {
     #selectedPayment {
         margin-top: 20px;
     }
+    .content{
+        display: flex;
+        margin-left: 80px;
+        justify-content: space-between;
+    }
 </style>
 
 
@@ -760,10 +765,17 @@ if (isset($_SESSION['my_seat']) && count($_SESSION['my_seat']) != 0 && isset($_S
 
                 <div class="noidung_muc" style="background: #2a2a2a;">
                     <div class="muccon" style="border: 1px solid #fff;">
-                        <p style="color: #e4d804; font-weight: bold;">Mục</p>
+                       <?php 
+                       if(isset($bonus['ten_do_an'])):
+
+                     ?>   
+                      <p style="color: #e4d804; font-weight: bold;">Loại đồ ăn</p>
                         <p style="color: #e4d804; margin-left: 84px; font-weight: bold;">Số lượng</p>
                         <p style="color: #e4d804; font-weight: bold;">Cộng</p>
+                    <?php endif; 
+                       ?>
                     </div>
+                    
                     <?php
                     $tong_tien_bonus = 0;
                     foreach ($_SESSION['my_bonus'] as $type => $bonus) : ?>
@@ -772,7 +784,7 @@ if (isset($_SESSION['my_seat']) && count($_SESSION['my_seat']) != 0 && isset($_S
                             $tong_tien_bonus += $bonus['so_luong'] * $bonus['gia_do_an'];
 
                         ?>
-                            <div class="muccon">
+                            <div class="content">
                                 <p style="max-width: 272px; min-width: 272px;"><?php echo $bonus['ten_do_an'] ?></p>
                                 <p style="max-width: 110px; min-width: 110px;"><?php echo $bonus['so_luong'] ?></p>
                                 <p style="max-width: 194px; min-width: 194px;"><?php echo $bonus['gia_do_an'] ?> VND</p>

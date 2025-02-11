@@ -397,8 +397,8 @@ if (isset($_GET['act'])) {
                 $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 
                 $vnp_Returnurl = "http://localhost/duan1/movflx/index.php?act=xac_minh_thanh_toan";
-                $vnp_TmnCode = "5NC5P2K0";
-                $vnp_HashSecret = "BDMOPKKCZTPNRAMDSHDXRVUMEPOAZSMV";
+                $vnp_TmnCode = "KA1BV3N8";
+                $vnp_HashSecret = "12GUKMUAGMQR4QW57D26MKG56RCYN9G8";
                 $vnp_TxnRef = rand(00, 9999);
                 $vnp_OrderInfo = "Thanh toán vé xem phim";
                 $vnp_OrderType = "billpayment";
